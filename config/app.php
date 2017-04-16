@@ -177,6 +177,7 @@ return [
         App\Providers\EventServiceProvider::class,
         App\Providers\RouteServiceProvider::class,
         Styde\Html\HtmlServiceProvider::class,
+        App\Providers\ViewServiceProvider::class,
 
     ],
 

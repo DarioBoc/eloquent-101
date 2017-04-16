@@ -15,6 +15,8 @@
     <link href="{{ asset('dashboard/vendors/font-awesome/css/font-awesome.min.css') }}" rel="stylesheet">
     <!-- Custom Theme Style -->
     <link href="{{ asset('css/custom.min.css') }}" rel="stylesheet">
+    <!-- Select2 -->
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet">
   </head>
 
   <body class="nav-md">
@@ -274,7 +276,9 @@
 
         <!-- page content -->
         <div class="right_col" role="main">
-            @yield('content')
+          <div class="container">
+              @yield('content')
+          </div>
         </div>
         <!-- /page content -->
 
@@ -297,6 +301,10 @@
     <script src="{{ asset('dashboard/vendors/fastclick/lib/fastclick.js') }}"></script>
     <!-- NProgress -->
     <script src="{{ asset('dashboard/vendors/nprogress/nprogress.js') }}"></script>
+    <!-- Select2 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>
+
+    @yield('js-section')
     
     <!-- Custom Theme Scripts -->
     <script src="{{ asset('js/custom.min.js') }}"></script>
