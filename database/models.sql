@@ -13,9 +13,9 @@
 DROP TABLE IF EXISTS `make_years`;
 
 CREATE TABLE `make_years` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int(10) NOT NULL AUTO_INCREMENT,
   `year` int(11) NOT NULL,
-  `make_id` int(11) DEFAULT NULL,
+  `make_id` int(10) DEFAULT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `compositeIndex` (`year`,`make_id`),
   KEY `make_id` (`make_id`),
@@ -1505,7 +1505,7 @@ UNLOCK TABLES;
 DROP TABLE IF EXISTS `makes`;
 
 CREATE TABLE `makes` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL,
   PRIMARY KEY (`id`),
   UNIQUE KEY `name` (`name`)
@@ -1671,7 +1671,7 @@ UNLOCK TABLES;
 DROP TABLE IF EXISTS `models`;
 
 CREATE TABLE `models` (
-  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `id` int(10) NOT NULL AUTO_INCREMENT,
   `name` varchar(255) NOT NULL,
   `makeyear_id` int(11) DEFAULT NULL,
   PRIMARY KEY (`id`),
